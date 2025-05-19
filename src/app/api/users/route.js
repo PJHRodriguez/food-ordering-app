@@ -1,4 +1,4 @@
-import { User } from "@/models/user";
+import { User } from "@/models/User";
 import mongoose from "mongoose";
 
 export async function GET() {

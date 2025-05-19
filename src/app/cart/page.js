@@ -1,11 +1,11 @@
 "use client";
-import { CartContext } from "@/components/AppContext";
-import SectionHeaders from "@/components/layout/SectionHeaders";
+import { CartContext } from "./src/components/AppContext";
+import SectionHeaders from "./src/components/layout/SectionHeaders";
 import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
-import Trash from "@/components/icons/Trash";
-import AddressInputs from "@/components/layout/AddressInputs";
-import { useProfile } from "@/components/UseProfile";
+import Trash from "./src/components/icons/Trash";
+import AddressInputs from "./src/components/layout/AddressInputs";
+import { useProfile } from "./src/components/UseProfile";
 
 export default function CartPage() {
   const { cartProducts, cartProductPrice, removeCartProduct } =
