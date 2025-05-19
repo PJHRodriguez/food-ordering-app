@@ -1,4 +1,4 @@
-import { MenuItem } from "@/models/menuItem";
+import { MenuItem } from "@/models/MenuItem";
 import mongoose from "mongoose";
 
 export async function POST(req) {
