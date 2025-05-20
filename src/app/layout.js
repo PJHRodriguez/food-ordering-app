@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import { AppProvider } from "@/components/AppContext";
 import { Toaster } from "react-hot-toast";
+import Alert from "@/components/Alert";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <main className="max-w-4xl p-4 mx-auto">
           <AppProvider>
+            <Alert />
             <Toaster />
             <Header />
             {children}
